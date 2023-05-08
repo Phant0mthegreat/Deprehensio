@@ -140,7 +140,7 @@ while True:
 
     print(f'{c.green}\n[!] CONECTADO COM SUCESSO !{c.white}')
 
-    print(f'\n{c.cyan}[!] CÓDIGO ↓{c.white}')
+    print(f'\n{c.cyan}[!] CAPTURANDO CÓDIGO...{c.white}')
 
     print(site.read())
 
