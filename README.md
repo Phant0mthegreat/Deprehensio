@@ -15,7 +15,7 @@ Deprehensio, ferramenta criada para facilitar a observação de códigos HTML de
 
  - `cd Deprehensio`
 
- - `pip install -r requirements.txt && python3 Deprehensio.py`
+ - `python3 Deprehensio.py`
 
 # Utilização
 
