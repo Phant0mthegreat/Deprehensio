@@ -10,16 +10,6 @@ import sys
 
 import time
 
-def Carreg():
-
-	l = ['|', '-', '|', '-']	for i in l+l+l:
-
-		sys.stdout.write('\r' + f'''\n{c.cyan}Conectando... '''+i)
-
-		sys.stdout.flush()
-
-		time.sleep(0.2)
-
 while True:
 
  os.system('clear')
@@ -124,9 +114,9 @@ while True:
 
    site2=input(f'[ {c.green}!{c.white} ] Digite a URL/LINK do site, Exemplo: https://www.google.com\n\n[i] Site: ')
 
-   Carreg()
+   print('')
 
-   print()
+   print(f'{c.bcyan}Conectando...{c.white}')
 
    
 
@@ -136,13 +126,13 @@ while True:
 
    except urllib.error.URLError:
 
-    print(f'{c.red}[!] O site está inacecivel de forma segura ou ele não existe :/{c.white}')
+    print(f'{c.red}[!] O site está inacessível de forma segura ou ele não existe :/{c.white}')
 
     input(f'[{c.green}ENTER{c.white}] para voltar ao menu.')
 
    except ValueError:
 
-     print(f'{c.red}\n[!] O site está inacecivel de forma segura ou ele não existe :/{c.white}')
+     print(f'{c.red}\n[!] O site está inacessível de forma segura ou ele não existe :/{c.white}')
 
      input(f'[{c.green}ENTER{c.white}] para voltar ao menu.')
 
@@ -259,3 +249,6 @@ while True:
    print(f'[{c.yellow}#{c.white}] Até a próxima !')
 
    exit()
+
+
+
